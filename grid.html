@@ -23,6 +23,7 @@
 
       .my-row {
         border: 4px solid red;
+        height: 300px;
       }
 
       .my-col {
@@ -44,18 +45,20 @@
       <!-- Define your rows within the container div -->
       <div class="row my-row">
         <!-- Add columns within the 'row' div.  This is where your actual content goes-->
-        <div class="col-md-4 my-col">
+        <!-- If you just use 'col' class then the space will be evenly distributed 
+        between columns -->
+        <div class="col-md-4 col-sm-6 my-col">
           Row 1 Col 1
         </div>
-        <div class="col-md-8 my-col">
+        <div class="col-md-8 col-sm-6 my-col">
           Row 1 Col 2
         </div>
       </div>
-      <div class="row my-row">
-        <div class="col my-col">
+      <div class="row justify-content-between align-items-center my-row">
+        <div class="col-4 my-col">
           Row 2 Col 1
         </div>
-        <div class="col my-col">
+        <div class="col-4 my-col">
           Row 2 Col 2
         </div>
       </div>
